@@ -1,71 +1,78 @@
+/* Resetting default margin, padding, and centering text for all elements */
 * {
     margin: 0;
     padding: 0;
     text-align: center;
-  }
-  
-  h1 {
-    background-color: #081b31;
-    color: #fff;
-    height: 5rem;
-    line-height: 5rem;
+}
 
-  }
-  
-  
-  .choice {
+/* Styling for the main heading */
+h1 {
+    background-color: #081b31; /* Dark blue background */
+    color: #fff; /* White text */
+    height: 5rem; /* Height of the heading */
+    line-height: 5rem; /* Vertical alignment */
+}
+
+/* Styling for choice buttons */
+.choice {
     height: 165px;
     width: 165px;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular shape */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .choice:hover {
+}
+
+/* Hover effect for choice buttons */
+.choice:hover {
     cursor: pointer;
-    background-color: #081b31;
-  }
-  
-  img {
+    background-color: #081b31; /* Dark blue background on hover */
+}
+
+/* Styling for images inside choice buttons */
+img {
     height: 150px;
     width: 150px;
     object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  .choices {
+    border-radius: 50%; /* Circular shape */
+}
+
+/* Styling for the choices container */
+.choices {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    margin-top: 5rem;
-  }
-  
-  .score-board {
+    gap: 3rem; /* Space between choice buttons */
+    margin-top: 5rem; /* Space above choices */
+}
+
+/* Styling for the score-board container */
+.score-board {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    margin-top: 3rem;
-    gap: 5rem;
-  }
-  
-  #user-score,
-  #comp-score {
-    font-size: 4rem;
-  }
-  
-  .msg-container {
-    margin-top: 5rem;
-  }
-  
-  #msg {
-    background-color: #081b31;
-    color: #fff;
-    font-size: 2rem;
+    font-size: 2rem; /* Font size for score labels */
+    margin-top: 3rem; /* Space above score board */
+    gap: 5rem; /* Space between user and computer scores */
+}
+
+/* Styling for user and computer scores */
+#user-score,
+#comp-score {
+    font-size: 4rem; /* Larger font size for scores */
+}
+
+/* Styling for message container */
+.msg-container {
+    margin-top: 5rem; /* Space above message container */
+}
+
+/* Styling for the message */
+#msg {
+    background-color: #081b31; /* Dark blue background */
+    color: #fff; /* White text */
+    font-size: 2rem; /* Font size for message */
     display: inline;
-    padding: 1rem;
-    border-radius: 1rem;
-  }
-  
+    padding: 1rem; /* Padding inside the message */
+    border-radius: 1rem; /* Rounded corners */
+}

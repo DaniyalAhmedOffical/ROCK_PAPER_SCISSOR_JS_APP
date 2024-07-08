@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors Game</title>
+    <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+<body>
+    <!-- Main heading for the game -->
     <h1>D_A Rock Paper Scissors Game</h1>
+    <!-- Container for choice buttons -->
     <div class="choices">
-      <div class="choice" id="rock">
-        <img src="./images/rock.png" />
-      </div>
-      <div class="choice" id="paper">
-        <img src="./images/paper.png" />
-      </div>
-      <div class="choice" id="scissors">
-        <img src="./images/scissors.png" />
-      </div>
+        <!-- Individual choice button for Rock -->
+        <div class="choice" id="rock">
+            <img src="./images/rock.png" />
+        </div>
+        <!-- Individual choice button for Paper -->
+        <div class="choice" id="paper">
+            <img src="./images/paper.png" />
+        </div>
+        <!-- Individual choice button for Scissors -->
+        <div class="choice" id="scissors">
+            <img src="./images/scissors.png" />
+        </div>
     </div>
-
+    <!-- Container for score display -->
     <div class="score-board">
-      <div class="score">
-        <p id="user-score">0</p>
-        <p>You</p>
-      </div>
-      <div class="score">
-        <p id="comp-score">0</p>
-        <p>Comp</p>
-      </div>
+        <!-- User's score display -->
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <!-- Computer's score display -->
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Comp</p>
+        </div>
     </div>
-
+    <!-- Container for message display -->
     <div class="msg-container">
-      <p id="msg">Play your move</p>
+        <p id="msg">Play your move</p>
     </div>
+    <!-- Link to the external JavaScript file -->
     <script src="app.js"></script>
-  </body>
+</body>
 </html>

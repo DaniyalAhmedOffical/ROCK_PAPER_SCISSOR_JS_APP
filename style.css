@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
 }
 
 /* Styling for the main heading */
@@ -11,6 +12,7 @@ h1 {
     color: #fff; /* White text */
     height: 5rem; /* Height of the heading */
     line-height: 5rem; /* Vertical alignment */
+    margin-bottom: 2rem; /* Space below the heading */
 }
 
 /* Styling for choice buttons */
@@ -43,7 +45,8 @@ img {
     justify-content: center;
     align-items: center;
     gap: 3rem; /* Space between choice buttons */
-    margin-top: 5rem; /* Space above choices */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    margin: 0 1rem; /* Margin on the sides */
 }
 
 /* Styling for the score-board container */
@@ -53,7 +56,8 @@ img {
     align-items: center;
     font-size: 2rem; /* Font size for score labels */
     margin-top: 3rem; /* Space above score board */
-    gap: 5rem; /* Space between user and computer scores */
+    gap: 2rem; /* Space between user and computer scores */
+    flex-wrap: wrap; /* Allow wrapping of items */
 }
 
 /* Styling for user and computer scores */
@@ -75,4 +79,60 @@ img {
     display: inline;
     padding: 1rem; /* Padding inside the message */
     border-radius: 1rem; /* Rounded corners */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    /* Adjust choice buttons for smaller screens */
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+    img {
+        height: 110px;
+        width: 110px;
+    }
+
+    /* Adjust the gap between choice buttons */
+    .choices {
+        gap: 1rem;
+    }
+
+    /* Adjust font size for scores and message */
+    #user-score,
+    #comp-score {
+        font-size: 3rem;
+    }
+    #msg {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust the margin above score board and message container */
+    .score-board {
+        margin-top: 2rem;
+    }
+    .msg-container {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjust choice buttons for very small screens */
+    .choice {
+        height: 90px;
+        width: 90px;
+    }
+    img {
+        height: 80px;
+        width: 80px;
+    }
+
+    /* Adjust font size for scores and message */
+    #user-score,
+    #comp-score {
+        font-size: 2rem;
+    }
+    #msg {
+        font-size: 1rem;
+    }
 }
